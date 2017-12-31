@@ -1,4 +1,8 @@
-*,
+---
+---
+
+@import "{{ site.theme }}";*,
+
 *::before,
 *::after {
   margin: 0;
