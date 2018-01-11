@@ -1,4 +1,6 @@
-[
+{
+  "appName" : "Pics",
+  "pictures" : [
   {
     "title": "Space Keybaord Cat",
     "timestamp": "2018-01-11T21:41:29Z",
@@ -60,3 +62,4 @@
     "description": "Don't you dare do the litter box on me!"
   }
 ]
+}
