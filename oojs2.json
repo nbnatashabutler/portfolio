@@ -1,0 +1,41 @@
+{
+  "squadName" : "Cats",
+  "homeTown" : "JSON to js to DOM, concatenated strings, etc.",
+  "formed" : 2018,
+  "secretBase" : "Super tower",
+  "active" : true,
+  "members" : [
+    {
+      "name" : "https://triplebyte-cats.s3.amazonaws.com/space.jpg",
+      "age" : "In space, no one can hear you purr.",
+      "secretIdentity" : "Space Keyboard Cat",
+      "powers" : [
+        "2018-01-11T21:41:29Z",
+        "Turning tiny",
+        "Radiation blast"
+      ]
+    },
+    {
+      "name" : "https://triplebyte-cats.s3.amazonaws.com/jiji.png",
+      "age" : "You’d think they’d never seen a girl and a cat on a broom before",
+      "secretIdentity" : "Jiji",
+      "powers" : [
+        "2018-01-11T20:41:29Z",
+        "Damage resistance",
+        "Superhuman reflexes"
+      ]
+    },
+    {
+      "name" : "https://triplebyte-cats.s3.amazonaws.com/lime.jpg",
+      "age" : "Destroyer of Clockspider and his evil followers, Limecat is the one true god.",
+      "secretIdentity" : "Limecat",
+      "powers" : [
+        "2018-01-11T19:41:29Z",
+        "Heat Immunity",
+        "Inferno",
+        "Teleportation",
+        "Interdimensional travel"
+      ]
+    }
+  ]
+}
