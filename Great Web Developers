@@ -27,3 +27,113 @@ a:active {
   text-decoration: underline;
 }
 </style>
+<head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Mrs+Sheppards&display=swap');
+  
+  
+      h3 {
+        font-family: 'Mrs Sheppards',cursive;
+        font-size: 140px;
+      }
+  
+  
+    
+  }
+  
+  table.vertical1 {
+  writing-mode: vertical-rl; 
+}
+tr.vertical1 {
+  writing-mode: vertical-rl; 
+}
+
+th.vertical1 {
+  writing-mode: vertical-rl; 
+}
+td.vertical1 {
+  writing-mode: vertical-rl; 
+}
+  
+  
+ p.vertical1 {
+  writing-mode: vertical-rl; 
+}
+p.vertical2 {
+  writing-mode: vertical-rl; 
+}
+  
+  span.vertical2{
+  writing-mode: vertical-rl; 
+}
+  
+  h6{
+    font-family:'Open Sans Condensed', sans-serif}
+ 
+
+  
+    a:link {
+      color: green;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: pink;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: red;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+
+    a:active {
+      color: yellow;
+      background-color: transparent;
+      text-decoration: underline;
+
+  </style>
+ 
+</head>
+
+<body style="background-color:F3f4ef;"> 
+<br>
+<h3 align="center">
+  Color Speaks
+    <table class="vertical1"align="bottom"><span class="vertical2"></span
+    <tr class="vertical"><span class="vertical2"; text-align:"top-center;" font-family:"open sans;"></span></tr>
+    
+      <th class="vertical1"style="background-color:F3f4ef;" text-align:"top-center;" font-family: "open sans;"writing-mode:"vertical-rl"><span class="vertical2"; text-align:"top-center;" font-family:"open sans;">food</span></th>
+      
+      
+      <td class="vertical1"style="background-color:"><iframe src="" height="275" width="275"style="background-color:	#c39854 " title=""></iframe><audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+</audio><span class="vertical2"; text-align:"top-center;" font-family:"open sans;"></span></td>
+    
+      <td class="vertical1"style="background-color:"><iframe src="" height="275" width="275" style="background-color:	#9ba2a6 "title=""></iframe><audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+color name
+</audio><span class="vertical2"; text-align:"top-center;" font-family:"open sans;"></span></td>
+    
+      <td class="vertical1"style="background-color:"><iframe src="" height="275" width="275" style="background-color:	#A14e49 "title=""></iframe><audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+color name
+</audio><span class="vertical2"; text-align:"top-center;" font-family:"open sans;"></span></td>
+      
+      </tr> 
+    
+  </table>
+<p class="vertical1"></p>
+
+
+    </h3>
+
+
+</body>
+</html>
