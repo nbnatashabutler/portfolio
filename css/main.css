@@ -1,37 +1,38 @@
 body {
     margin: 60px auto;
     width: 70%;
-    border: 5px dashed;
+    
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
-    border: 5px dashed;
+    
 }
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
-    border: 5px dashed;
+    
 }
 a {
+  position: relative;
     text-decoration: none;
     color: #999;
 }
 a:hover {
-    text-decoration: underline;
+    color: black;
 }
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    border: 5px dashed;
+    
 }
 p {
     font-size: 1.5em;
     line-height: 1.4em;
     color: #333;
-    border: 5px dashed;
+    
 }
 footer {
     border-top: 1px solid #d5d5d5;
@@ -48,21 +49,25 @@ ul.posts li {
     list-style: none;
 }
 
-.LI-profile-badge {
+#profile {
     
-  relative;
-    border-radius: 70px;
-    background: #0077B5;
+  position: relative;
+  border-radius: 70px;
+  background: #0077B5;
   width: 40px;
-    background: #0077B5;
+  background: #0077B5;
+  
+  
 }
 
-.LI-profile-badge-text{
+#profiletext a {
   font-family: 'Roboto Condensed', sans-serif;
   position: relative;
   color: #FBFDFE;
   font-weight: 400px;
   font-size: 30px;
+  z-index: 3;
+ 
 }
 
 span{
