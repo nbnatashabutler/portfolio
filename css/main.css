@@ -1,16 +1,19 @@
 body {
     margin: 60px auto;
     width: 70%;
+    border: 5px dashed;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
+    border: 5px dashed;
 }
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
+    border: 5px dashed;
 }
 a {
     text-decoration: none;
@@ -22,15 +25,18 @@ a:hover {
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    border: 5px dashed;
 }
 p {
     font-size: 1.5em;
     line-height: 1.4em;
     color: #333;
+    border: 5px dashed;
 }
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
+    border: 5px dashed;
 }
 
 ul.posts { 
@@ -40,4 +46,13 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+
+LI-profile-badge {
+    
+  relative;
+    border-radius: 70px;
+    background: #0077B5;
+  width: 40px;
+    background: #0077B5;
 }
