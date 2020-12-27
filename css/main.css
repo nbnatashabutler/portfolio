@@ -48,11 +48,23 @@ ul.posts li {
     list-style: none;
 }
 
-LI-profile-badge {
+.LI-profile-badge {
     
   relative;
     border-radius: 70px;
     background: #0077B5;
   width: 40px;
     background: #0077B5;
+}
+
+.LI-profile-badge-text{
+  font-family: 'Roboto Condensed', sans-serif;
+  position: relative;
+  color: #FBFDFE;
+  font-weight: 400px;
+  font-size: 30px;
+}
+
+span{
+  visibility:hidden;
 }
