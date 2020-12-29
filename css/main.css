@@ -80,6 +80,26 @@ input{
 display: none;
 }
 
+.text {
+  display:inline;
+}
+  
+ .confirm {
+    display:inline;
+    
+    }
+
+.print {
+  display: block;
+}
+    
+  
+.submit {
+  display: inline;
+  
+    
+  }
+
 label{
 display: block;
 padding: 8px 22px;
