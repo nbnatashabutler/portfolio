@@ -52,7 +52,7 @@ ul.posts li {
 }
 
 #profile {
- display:inline;
+ display:block;
 float:left;
  position: fixed;
    
@@ -73,6 +73,8 @@ float:left;
 #middle
 {
 	display:block;
+	position: fixed;
+	top: 500px;
 }
 
 
