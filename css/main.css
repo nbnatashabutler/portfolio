@@ -50,7 +50,8 @@ ul.posts li {
 }
 
 #profile {
-  display:inline;  
+  display:inline;
+  padding: 3px;
   position: relative;
   border-radius: 70px;
   width: 40px;
