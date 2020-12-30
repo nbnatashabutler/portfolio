@@ -15,6 +15,7 @@ nav ul, footer ul {
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
+    list-style: none;
     
 }
 a {
@@ -59,7 +60,9 @@ span{
   visibility:hidden;
 }
 
-
+.date {
+    font-family: roboto, sans-serif;
+    font-size: 8px;
 
 
 .text {
