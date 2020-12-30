@@ -36,9 +36,7 @@ p {
     color: #333;
     
 }
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+
     
 }
 
@@ -51,24 +49,7 @@ ul.posts li {
     list-style: none;
 }
 
-#profile {
- display:block;
-float:left;
- position: fixed;
-   
-  
-  
-}
 
-#profiletext a {
-  font-family: 'Roboto Condensed', sans-serif;
-  position: relative;
-  color: #FBFDFE;
-  font-weight: 400px;
-  font-size: 30px;
-  z-index: 3;
- 
-}
 
 
 
@@ -79,10 +60,7 @@ span{
 }
 
 
-input{
-  
-display: none;
-}
+
 
 .text {
   display:inline;
@@ -106,13 +84,4 @@ display: none;
 
 
 
-input + label + .content {
-
-display: none;
-}
-
-input:checked + label + .content {
-
-display: block;
-}
 
