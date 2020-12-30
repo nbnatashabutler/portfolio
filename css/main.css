@@ -50,10 +50,9 @@ ul.posts li {
 }
 
 #profile {
-    
+  display:inline;  
   position: relative;
   border-radius: 70px;
-  background: #0077B5;
   width: 40px;
   background: #0077B5;
   
