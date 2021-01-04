@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+  align-self: center;
+}
+
+.flip-box-back {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+h3
+{ 
+
+
+}
+</style>
+</head>
+<body>
+
+<h1></h1>
+<h3>The Covid 19 Mock-Interview</h3>
+
+<div class="flip-box">
+
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="https://user-images.githubusercontent.com/31878414/103507144-81508f00-4e2c-11eb-9b85-ea8e1875d0d9.jpeg" alt="Paris" style="width:140px;height:140px">
+    </div>
+    <div class="flip-box-back">
+      <h2>Paris</h2>
+      <p>This sure makes traveling a lot easier.</p>
+    </div>
+  </div>
+  <h3 class="heading">Detangling 11 Years Of Web Dev Experience</h3>
+  
+  <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="https://user-images.githubusercontent.com/31878414/103500776-15fdc180-4e1a-11eb-94ed-fab78d758f38.gif" alt="Paris" style="width:140px;height:140px">
+    </div>
+    <div class="flip-box-back">
+      <h2>Paris</h2>
+      <p>Sorting out a whole host of skills, principles, and methods that may or may not be considered best practice takes some patience for someone who has been privileged with flexibility to freely explore all things pertaining to web development.</p>
+    </div>
+  </div>
+  
+  <h3 class="heading">Humanizing Design - Oh No!</h3>
+  
+  <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="https://user-images.githubusercontent.com/31878414/103500775-15fdc180-4e1a-11eb-9c9b-26d068855d81.gif" alt="Paris" style="width:140px;height:140px">
+    </div>
+    <div class="flip-box-back">
+      <h2>Paris</h2>
+      <p>Designing with a human touch. That sounds pleasant. I found a <a=href"">site</a> that hit the ball out the park, in my humble opinion.</p>
+    </div>
+  </div>
+  
+  <h3 class="heading">Out Of The "Rabbit Hole". Now What?</h3>
+  
+  <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="https://user-images.githubusercontent.com/31878414/103500773-15fdc180-4e1a-11eb-9e65-c57923aead9e.gif" alt="Paris" style="width:140px;height:140px">
+    </div>
+    <div class="flip-box-back">
+      <h2>Paris</h2>
+      <p>My hands are filled with tools and techniques but my portfolio is a little bare. I'm building a command central self-imposed bootcamp to stay fit for the chance build something meaningful. </p>
+    </div>
+  </div>
+  
+  <h3 class="heading">My Hands Are Filled With Tools and Techniques. </h3>
+  
+  <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="https://user-images.githubusercontent.com/31878414/103500771-15652b00-4e1a-11eb-8dc3-7b2462e06556.gif" alt="Paris" style="width:140px;height:140px">
+    </div>
+    <div class="flip-box-back">
+      <h2>Paris</h2>
+      <p><a href="">Portfolio</a> <a href="">Command Central</a> Take a peek.</p>
+    </div>
+  </div>
+  
+  <h3 class="heading">My Resume Is Watching Recruiters Walk By. Why Oh Why?</h3>
+  
+  <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="https://user-images.githubusercontent.com/31878414/103500767-14cc9480-4e1a-11eb-8326-82e67c33033f.gif" alt="Paris" style="width:140px;height:140px">
+    </div>
+    <div class="flip-box-back">
+      <h2>Paris</h2>
+      <p>I built an app component for resume critiques. Test it. If it doesn't work email me the forms. I'm on <a href="">LinkedIn</a>. Here's my latest <a href="">CSS Grid</a>. <a href="">React</a> and <a href="">Py</a> are trending here's some grab and go code.</p>
+    </div>
+  </div>
+  
+  
+  
+  
+</div>
+
+</body>
+</html>
