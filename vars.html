@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.pre_codeblock{
+
+visibility:hidden;
+}
+
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+pre {
+    max-width: 50%;
+    margin: 2.5em 0;
+    background-color: #222;
+    color: orange;
+    overflow-x: scroll;
+    position: relative;
+    padding: 1.4em 0 .25em;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+
+<p>Click on the button to copy the text from the text field. Try to paste the text (e.g. ctrl+v) afterwards in a different window, to see the effect.</p>
+
+
+
+<input class="pre_codeblock" type ="text" value="abc"= id="theCode" readonly> <pre>
+CSS
+
+Declare Global Variables with :root Use variables with var(--blue)
+
+
+
+:root {
+Declare Global Variables with :root Use variables with var(--blue) case sensitive: yes
+
+
+
+CSS variables are declarative, which means if you change the value, it’ll affect both earlier uses and later uses.
+  CSS variables can have different values for different elements. CSS has variables of its own, which are totally different than Sass variables.
+
+
+
+  
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+} 
+
+body { background-color: var(--blue); } 
+
+  
+ same syntax but seemingly more complex 
+
+
+  
+:root {
+    /* UI Colors */
+    --primary-hue: 12;
+    --color--primary: hsl(var(--primary-hue), 100%, 44%);
+    --color--primary--hover: hsl(var(--primary-hue), 100%, 39%);
+    --color--primary--active: hsl(var(--primary-hue), 84%, 30%);
+
+    /* ... */
+
+    --border-color: #ebebeb;
+
+    /* Box Shadows */
+    --shadow-01: 0px 2px 4px rgba(37, 37, 37, 0.1);
+    --shadow-02: 0px 4px 8px rgba(37, 37, 37, 0.1);
+    --shadow-03: 0px 8px 16px rgba(37, 37, 37, 0.1);
+    --shadow-04: 0px 16px 24px rgba(37, 37, 37, 0.1);
+    --shadow-05: 0px 24px 32px rgba(37, 37, 37, 0.1);
+ 
+
+
+  
+Even more complex.
+
+
+:root { --color: blue; }
+div { --color: green; }
+#alert { --color: red; }
+* { color: var(--color); }
+
+
+
+I inherited blue from the root element!
+
+
+I got green set directly on me!
+
+
+  While I got red set directly on me!
+  
+I’m red too, because of inheritance!
+
+
+ 
+
+
+
+  
+:root {
+  --gutter: 4px;
+}
+
+section {
+  margin: var(--gutter);
+}
+
+@media (min-width: 600px) {
+  :root {
+    --gutter: 16px;
+  }
+}
+
+ 
+
+</input></pre>
+
+<div class="tooltip">
+<button onclick="myFunction()" onmouseout="outFunc()">
+  <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+  Copy Code
+  </button>
+</div>
+
+
+<input class="pre_codeblock" type ="text" value="abc"= id="theCode" readonly> <pre> Sass
+Sass
+$
+Make a variable with $variable-name: variable value;
+
+Sass variables only have one value at a time and cannot have different values for varied elements. Sass variables are imperative, which means if you use a variable and then change its value, the earlier use will stay the same.
+
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+} 
+
+</input></pre>
+
+<div class="tooltip">
+<button onclick="myFunction()" onmouseout="outFunc()">
+  <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+  Copy Code
+  </button>
+</div>
+
+<input class="pre_codeblock" type ="text" value="abc"= id="theCode" readonly> <pre>
+Pug.js/Node.js
+5 types String = str Interger = num Array = arr Object = obj Concatenation = cnct
+pre> var str = "Text";
+
+ Concatenate
+var value = 'World' ;
+var cnct = 'Hello' + value; Object var obj= = { website: 'nodejsera.com' } Array var arr = ['A', 'B', 'C'] Integer var num = 2.57 ; String var str = "String";
+</input></pre>
+
+<div class="tooltip">
+<button onclick="myFunction()" onmouseout="outFunc()">
+  <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+  Copy Code
+  </button>
+</div>
+
+<input class="pre_codeblock" type ="text" value="abc"= id="theCode" readonly> <pre> <h3>HTML.js any character combination can be put inside of <pre>var tags</pre><h3>
+<pCreate a <var>var tag</var> and use it, all with javascript.<p>
+pre>var x = document.createElement("VAR"); </pre>
+<pre>var x = document.getElementById("myVar"); </pre>
+
+</input></pre>
+
+<div class="tooltip">
+<button onclick="myFunction()" onmouseout="outFunc()">
+  <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+  Copy Code
+  </button>
+</div>
+
+<input class="pre_codeblock" type ="text" value="abc"= id="theCode" readonly> <pre>
+C++
+Declare and Create Variables
+int - stores integers (whole numbers), without decimals, such as 123 or -123 double - stores floating point numbers, with decimals, such as 19.99 or -19.99 char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes string - stores text, such as "Hello World". String values are surrounded by double quotes bool - stores values with two states: true or false
+
+// Declare a variable
+int score;
+ 
+// Initialize a variable
+score = 0; 
+</input></pre>
+
+<div class="tooltip">
+<button onclick="myFunction()" onmouseout="outFunc()">
+  <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+  Copy Code
+  </button>
+  
+  
+<input class="pre_codeblock" type ="text" value="abc"= id="theCode" readonly> <pre>
+Java
+int char boolea byte long short double float null
+
+pre>char answer = 'y';
+
+ 
+
+</input></pre>
+
+<div class="tooltip">
+<button onclick="myFunction()" onmouseout="outFunc()">
+  <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+  Copy Code
+  </button>
+</div>
+
+
+<input class="pre_codeblock" type ="text" value="abc"= id="theCode" readonly> <pre><h3>C#<h3>
+<p>Declare Create and Use Variable <br>
+int - stores integers (whole numbers), without decimals, such as 123 or -123
+double - stores floating point numbers, with decimals, such as 19.99 or -19.99
+char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
+string - stores text, such as "Hello World". String values are surrounded by double quotes
+bool - stores values with two states: true or false
+<p>
+<pre> type variableName = value; </pre>
+<pre>string name = "John";
+Console.WriteLine(name); </pre>
+
+<pre>var greeting = "Welcome to W3Schools</pre>
+
+</input></pre>
+
+<div class="tooltip">
+<button onclick="myFunction()" onmouseout="outFunc()">
+  <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+  Copy Code
+  </button>
+</div>
+
+<input class="pre_codeblock" type ="text" value="abc"= id="theCode" readonly> <pre>
+
+Python
+A variable is used to store data that will be used by the program. This data can be a number, a string, a Boolean, a list or some other data type. Every variable has a name which can consist of letters, numbers, and the underscore character _. The equal sign = is used to assign a value to a variable. After the initial assignment is made, the value of a variable can be updated to new values as needed.
+
+pre>user_name = "@sonnynomnom" user_id = 100 verified = False # A variable's value can be changed after assignment points = 100 points = 120
+
+</input></pre>
+
+<div class="tooltip">
+<button onclick="myFunction()" onmouseout="outFunc()">
+  <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+  Copy Code
+  </button>
+</div>
+
+<input class="pre_codeblock" type ="text" value="abc"= id="theCode" readonly> <pre>PHP $
+echo
+Parsing Reassigning Concatenating Variables Appending Copying Escaping
+
+In PHP, variables are assigned values with the assignment operator (=). Variable names can contain numbers, letters, and underscores (_). A sigil ($) must always precede a variable name. They cannot start with a number and they cannot have spaces or any special characters. The convention in PHP is to use snake case for variable naming; this means that lowercase words are delimited with an underscore character (_). Variable names are case-sensitive.
+
+pre>Parse $my_var = "cat"; echo "There is one $my_var on the mat"; /* If there were three cats, then you can type: */ echo "There are three {$my_var}s on the mat "; /* The curly braces help to avoid confusion between the variable name and the letter s, so PHP does not consider the variable name as my_vars */
+Reasign $var1 = "Bob";
+echo $var1;
+// var1 holds the value "Bob"
+ 
+$var1 = "John";
+echo $var1;
+// var1 now holds the value "John" 
+Concatenate echo "Hello,"." welcome to Codecademy!";
+// prints - Hello, welcome to Codecademy! 
+Append $str = "Hello, ";
+$str .= "World!";
+ 
+echo $str;
+// Output: Hello, World!  
+Copy $original = "Ice T";
+$copy = $original;
+$orginal = "Iced Tea";
+echo $copy; // "Ice T";
+Escape echo "Hello, World!\nThis is a String!";
+/* prints-
+Hello, World!
+This is a String!
+*/ 
+
+</input></pre>
+
+<div class="tooltip">
+<button onclick="myFunction()" onmouseout="outFunc()">
+  <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+  Copy Code
+  </button>
+</div>
+
+<input class="pre_codeblock" type ="text" value="abc"= id="theCode" readonly> <pre>
+
+Ruby
+In Ruby, a variable is a place to store values of almost any type including Integer, Boolean, String, Array, and Hashes. Each variable has its own name which cannot begin with a capital letter or a number and we use the equal sign for assigning a value to that variable. The variable declaration does not require that you mention a specific data type. The following program declares myvar variable and assigns the value 48.
+
+myVar = 48 
+print is similar to inline and puts is similar to block in html
+
+</input></pre>
+  
+</div>
+<script>
+function myFunction() {
+  var copyText = document.getElementById("theCode");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "CtrlV to paste" ;
+}
+
+<input class="pre_codeblock" type ="text" value="abc"= id="theCode" readonly> <pre>
+Javascript Variables
+Start them with a letter, underscore _, or dollar sign $. After the first letter, you can use numbers, as well as letters, underscores, or dollar signs. Don’t use any of JavaScript’s reserved keywords.
+
+re-assignable variable
+
+pre> var x = 100; var y = x + 102; y;
+constant
+
+let name = "Tammy";
+
+ 
+
+</input></pre>
+
+<div class="tooltip">
+<button onclick="myFunction()" onmouseout="outFunc()">
+  <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+  Copy Code
+  </button>
+</div>
+
+
+<input class="pre_codeblock" type ="text" value="abc"= id="theCode" readonly> <pre>sample code
+
+</input></pre>
+
+<div class="tooltip">
+<button onclick="myFunction()" onmouseout="outFunc()">
+  <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+  Copy Code
+  </button>
+</div>
+
+<input class="pre_codeblock" type ="text" value="abc"= id="theCode" readonly> <pre>
+
+Swift
+Variables Constants Type: Int Double String Bool UIButton UIViewController UISwitch CLLocationManager
+
+explicit
+
+ var score:Int = 0  
+inferred
+
+ var score = 0 
+constant cannot be reassigned
+
+let value = 3 + 3.1415
+
+</input></pre>
+
+<div class="tooltip">
+<button onclick="myFunction()" onmouseout="outFunc()">
+  <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+  Copy Code
+  </button>
+</div>
+
+<input class="pre_codeblock" type ="text" value="abc"= id="theCode" readonly> <pre>sample code
+
+</input></pre>
+
+<div class="tooltip">
+<button onclick="myFunction()" onmouseout="outFunc()">
+  <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+  Copy Code
+  </button>
+</div>
+
+<input class="pre_codeblock" type ="text" value="abc"= id="theCode" readonly> <pre>R
+R does not have a command for declaring a variable. A variable is created the moment you first assign a value to it. To assign a value to a variable, use the <- sign. To output (or print) the variable value, just type the variable name:
+
+pre> name <- "John Doe" print(name)
+
+name <- "John"
+age <- 40
+
+name   
+age 
+
+</input></pre>
+
+
+
+function outFunc() {
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copy to clipboard";
+}
+</script>
+
+</body>
+</html>
+ 
