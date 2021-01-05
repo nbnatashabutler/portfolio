@@ -21,6 +21,12 @@ nav ul li, footer ul li {
     list-style: none;
     
 }
+    
+    .inline{
+        
+        display: inline;
+        
+    }
 a {
   position: relative;
     text-decoration: none;
