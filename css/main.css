@@ -22,11 +22,11 @@ nav ul li, footer ul li {
     
 }
     
-   a .inline{
+   ul li .inline{
         
         display: inline;
         color: grey;
-text-decoration: none;
+list-style: none;
 
         
     }
