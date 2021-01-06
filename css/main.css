@@ -5,7 +5,9 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
     
     ul{
-        list-style: none;
+        list-style-type: none;
+color:DarkGrey
+
     
 }
 nav ul, footer ul {
@@ -13,20 +15,23 @@ nav ul, footer ul {
     padding: 0px;
     list-style: none;
     font-weight: bold;
+color:DarkGrey;
+
     
 }
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
-    list-style: none;
+    list-style-type: none;
+color:DarkGrey;
     
 }
     
    ul li .inline{
         
         display: inline;
-        color: grey;
-list-style: none;
+        color: DarkGrey;
+list-style-type: none;
 
         
     }
@@ -34,7 +39,7 @@ a {
   position: relative;
 display: inline-block;
     text-decoration: none;
-    color: grey;
+    color: DarkGrey;
 }
 a:hover {
     color: #0e0e0e;
@@ -58,10 +63,13 @@ ul.posts {
     margin: 20px auto 40px; 
     font-size: 1.5em;
     list-style: none;
+    color:DarkGrey;
+
 }
 
 ul.posts li {
     list-style: none;
+color:DarkGrey;
 }
 
 
