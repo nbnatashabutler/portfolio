@@ -22,15 +22,19 @@ nav ul li, footer ul li {
     
 }
     
-    .inline{
+   a .inline{
         
         display: inline;
+        color: grey;
+text-decoration: none;
+
         
     }
 a {
   position: relative;
+display: inline-block;
     text-decoration: none;
-    color: #999;
+    color: grey;
 }
 a:hover {
     color: #0e0e0e;
