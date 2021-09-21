@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+	
+	var x = 0;
+var array = Array();
+function add_element_to_array()
+{
+array[x] = document.getElementById("text1").value;
+alert("Your suggested modification reads as follows: " + " " + array[x] + " " + "confirmation number" + " " +  x);
+x++;
+document.getElementById("text1").value = "";
+}
+function display_array()
+{
+ var e = "<hr/>";
+
+ for (var y=0; y<array.length; y++)
+ {
+ e += "Critique Number " + y + " = " + array[y] + "<br/>";
+ }
+ document.getElementById("Result").innerHTML = e;
+}
+
+        function printDiv() { 
+            var divContents = document.getElementById("Result").innerHTML; 
+            var a = window.open('', '', 'height=500, width=500'); 
+            a.document.write('<html>'); 
+            a.document.write('<body > <h1>Feedback is critical to the design process. Please send suggested modifications by email. Include your availability and preferred communication method if the chance to discuss an opportunity has become available.<h1> <hr> <br> <p> nbnatashabutler@gmail.com Subject: Critique</p>'); 
+            a.document.write(divContents); 
+            a.document.write('</body></html>'); 
+            a.document.close(); 
+            a.print(); 
+	}
+		</script>
+		
+		<title>Design To Code Repo</title>
+		
+		
+	<link rel="stylesheet" type="text/css" href="/portfolio/css/main.css/">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href= "https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+		
+	</head>
+<nav>	<body>
+<ul>
+<li style="list-style-type:none color:DarkGrey"><a href= "https://user-images.githubusercontent.com/31878414/103500766-1433fe00-4e1a-11eb-8080-28d750242936.gif"target="_blank">Download Resume</a>
+	<img src="https://user-images.githubusercontent.com/31878414/103500767-14cc9480-4e1a-11eb-8326-82e67c33033f.gif"></li>
+    		
+			</ul>
+		</nav>
+		<div class="container">
+    		<div class="blurb">
+        		<h1>Design To Code Repo</h1>
+			<p> This is a collection of resources, tools, and components for designing web applications.
+				<p><a href="https://jsfiddle.net/user/natasha_b/fiddles/">Tinkering Studio view at your liesure...</a></p>
+    		</div
+		
+		
+    		<ul class="inline">
+        		<li style="list-style-type:none color:DarkGrey">nbnatashabutler@gmail.com</li>
+			<li style="list-style-type:none color:DarkGrey"><a href="about.html">Command Central</a></li>
+			<li style="list-style-type:none color:DarkGrey"><a href="about.html">About Me 2021</a></li>
+<li style="list-style-type:none color:DarkGrey"><a href="surveys.html">Forms</a></li>
+			
+        		<li style="list-style-type:none color:DarkGrey"><a href="about.html">Includes</a></li>
+			<li style="list-style-type:none color:DarkGrey"><a href="about.html">Sorts and Strings</a></li>
+			<li style="list-style-type:none color:DarkGrey"><a href="about.html">Variables</a></li>
+			<li style="list-style-type:none color:DarkGrey"><a href="grid.html">Q3 Grid</a></li>
+			<li style="list-style-type:none color:DarkGrey"><a href="about.html">Q3 Specificity</a></li>
+                    
+
+
+			</ul><hr></hr>
+
+<div id="profile"></div>
+      
+   
+			
+<div id="middle">
+			
+
+<div class="content">
+	Enter suggested modifications.<br>
+<input class="text"type="text" id="text1">
+  
+<input class="confirm"type="button" id="button1" value="confirm" onclick="add_element_to_array();">
+  
+<input class="submit"type="button" id="button2" value="submit" onclick="display_array();"><br>
+  
+   
+	<input class="print" type="button" value="print" onclick="printDiv()"><hr></hr>
+   <div id="Result">UX Trends<div> 
+  
+  
+<p> <a href=""> <embed src="https://user-images.githubusercontent.com/31878414/103323745-53c1ab00-4a12-11eb-8bbe-1e715902f11b.gif"></a>
+	   </p>
+	
+<p>Content goes here.</p><br><a href="#profile">top</a><br><p class="date">
+	   contribution date: 12/30/2020<hr></hr>
+
+
+</div>
+
+
+<div class="content">
+	Enter suggested modifications.<br>
+	<input class="text"type="text" id="text2"></input>
+	<input class="confirm"type="button" id="button1" value="confirm" onclick="add_element_to_array();">
+  
+<input class="submit"type="button" id="button2" value="submit" onclick="display_array();">
+  <br>
+   
+	   <input class="print" type="button" value="print" onclick="printDiv()"><hr></hr>
+   <div id="Result">Web Patterns<div> 
+	   
+	   <p><a href=""> <embed src="https://user-images.githubusercontent.com/31878414/103323747-545a4180-4a12-11eb-993b-d8714c4cee55.gif"></a> </p>	   
+<p>Content goes here.</p><br><a href="#profile">top</a><br><p class="date">
+	   contribution date: 12/30/2020<hr></hr>
+</div>
+
+
+<div class="content">
+	Enter suggested modifications.<br>
+	<input class="text"type="text" id="text3"></input> 
+	<input class="confirm"type="button" id="button1" value="confirm" onclick="add_element_to_array();">
+  
+<input class="submit"type="button" id="button2" value="submit" onclick="display_array();">
+  <br>
+   
+	<input class="print" type="button" value="print" onclick="printDiv()"><hr></hr>
+   <div id="Result">SASS<div> 
+	   
+	   <p><a href=""> <embed src="https://user-images.githubusercontent.com/31878414/103323749-545a4180-4a12-11eb-8be9-db17cdcbd81a.gif"></a></p>	   
+<p>Content goes here.</p><br><a href="#profile">top</a><br><p class="date">
+	   contribution date: 12/30/2020<hr></hr>
+</div>
+
+
+<div class="content">
+	Enter suggested modifications.<br>
+	<input class="text"type="text" id="text4"></input> 
+	<input class="confirm"type="button" id="button1" value="confirm" onclick="add_element_to_array();">
+  
+<input class="submit"type="button" id="button2" value="submit" onclick="display_array();"><br>
+  
+   
+			<input class="print" type="button" value="print" onclick="printDiv()"><hr></hr>
+   <div id="Result">Design Goodies<div> 
+	   <p><a href=""> <embed src="https://user-images.githubusercontent.com/31878414/103323806-72c03d00-4a12-11eb-99af-1db8da34204c.gif"></a> </p>
+<p>Content goes here.</p><br><a href="#profile">top</a><br><p class="date">
+	   contribution date: 12/30/2020<hr></hr>
+</div>
+	   
+	   
+<div class="content">
+	Enter suggested modifications.<br>
+	<input class="text"type="text" id="text5"></input> 
+	<input class="confirm"type="button" id="button1" value="confirm" onclick="add_element_to_array();">
+  
+<input class="submit"type="button" id="button2" value="submit" onclick="display_array();"><br>
+  
+   
+	<input class="print" type="button" value="print" onclick="printDiv()"><hr></hr>
+   <div id="Result">Workflow Management<div> 
+	   <p><a href=""> <embed src="https://user-images.githubusercontent.com/31878414/103323807-7358d380-4a12-11eb-826a-e9e8767ad304.gif"></a></p>
+<p>Content goes here.</p><br><a href="#profile">top</a><br><p class="date">
+	   contribution date: 12/30/2020 <hr></hr>
+	   </div>
+	   
+	   
+	   	   
+<div class="content">
+	Enter suggested modifications.<br>
+	<input class="text"type="text" id="text6"></input> 
+	<input class="confirm"type="button" id="button1" value="confirm" onclick="add_element_to_array();">
+  
+<input class="submit"type="button" id="button2" value="submit" onclick="display_array();"><br>
+  
+   
+	<input class="print" type="button" value="print" onclick="printDiv()"><hr></hr>
+   <div id="Result">ECMA<div> 
+	   <p><a href=""> <embed src="https://user-images.githubusercontent.com/31878414/103323808-7358d380-4a12-11eb-9343-78b7e3822092.gif"></a> </p>
+<p>Content goes here.</p><br><a href="#profile">top</a><br><p class="date">
+	   contribution date: 12/30/2020 <hr></hr>
+	   </div>
+	   
+	   
+	   	   	   
+<div class="content">
+	Enter suggested modifications.<br>
+	<input class="text"type="text" id="text7"></input> 
+	<input class="confirm"type="button" id="button1" value="confirm" onclick="add_element_to_array();">
+  
+<input class="submit"type="button" id="button2" value="submit" onclick="display_array();"><br>
+  
+   
+<input class="print" type="button" value="print" onclick="printDiv()"><hr></hr>
+   <div id="Result">UI Creatives<div> 
+	   <p><a href=""> <embed src="
+https://user-images.githubusercontent.com/31878414/103323810-73f16a00-4a12-11eb-93f5-df81de32e796.gif"></a> </p>
+<p>Content goes here.</p><br><a href="#profile">top</a><br><p class="date">
+	   contribution date: 12/30/2020 <hr></hr>
+	   </div>
+	   
+	  
+	   
+	   	   	   	   
+<div class="content">
+	Enter suggested modifications.<br>
+	<input class="text"type="text" id="text8"></input> 
+	<input class="confirm"type="button" id="button1" value="confirm" onclick="add_element_to_array();">
+  
+<input class="submit"type="button" id="button2" value="submit" onclick="display_array();"><br>
+  
+   
+<input class="print" type="button" value="print" onclick="printDiv()"><hr></hr>
+   <div id="Result">Career and Credentials<div> 
+   <p><a href=""> <embed src="https://user-images.githubusercontent.com/31878414/103323809-73f16a00-4a12-11eb-8c89-0c0b0480fca3.gif"></a> </p>
+<p>Content goes here.</p><br><a href="#profile">top</a><br><p class="date">
+	   contribution date: 12/30/2020 <hr></hr>
+</p>
+	   </div>
+	   
+	   </div>
+	   
+	   <footer> </footer>
+<p> </p>
+	   
+	   </body>
+	   </html>
+	   
