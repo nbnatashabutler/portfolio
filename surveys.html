@@ -412,7 +412,7 @@ https://user-images.githubusercontent.com/31878414/103323810-73f16a00-4a12-11eb-
 
 //1 of 
 
-<div class="mirror2 active 2 ">
+<div class="mirror2 activetwo ">
 <table>
 <tr>
 <th>...</th>
@@ -883,6 +883,7 @@ https://user-images.githubusercontent.com/31878414/103323810-73f16a00-4a12-11eb-
 
 <button class="hide-me_9"></button>
 </div>
+</section>
 
 
 
@@ -976,7 +977,7 @@ $('[class*="-me_"]').click( function(){
 $('button.next-table').click( function(){
 	var currentone = $('.responsive-tables .active');
 	var currenttwo = $('.responsive-tables .activetwo'); 
-	var next = $('.responsive-tables .activetwo + [class*="little"]');
+	var next = $('.responsive-tables .activetwo + [class*="mirror"]');
 	var last = $('.responsive-tables .last');
 	next.addClass('activetwo');
 	currentone.removeClass('active').addClass('last');
@@ -988,7 +989,7 @@ $('button.next-table').click( function(){
 	
 
 	if( echonext === undefined ){
-		$('.little1').addClass('activetwo');
+		$('.mirror1').addClass('activetwo');
 
 } 
 
@@ -997,7 +998,7 @@ $('button.next-table').click( function(){
 $('button.prev-table').click( function(){
 	var currentone = $('.responsive-tables .active');
 	var currenttwo = $('.responsive-tables .activetwo'); 
-	var prev = $('responsive-tables .last').prev('[class*="little"]');
+	var prev = $('responsive-tables .last').prev('[class*="mirror"]');
 	var last = $('.responsive-tables .last');
 	prev.addClass('last');
 	currentone.removeClass('active').addClass('activetwo');	
@@ -1007,7 +1008,7 @@ $('button.prev-table').click( function(){
 	//alert(prev.attr('class'));
 
 	if( prev.attr('class') === undefined ){
-		$('.responsive-tables .little9').addClass('last');
+		$('.responsive-tables .mirror9').addClass('last');
 	}
 
 });
