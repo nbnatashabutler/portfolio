@@ -45,6 +45,10 @@ function display_array()
 		
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href= "https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Open+Sans:400italic,600italic,400,300,600">
+<link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=entypo">
+/*
+
 </head>
 
 	
@@ -236,9 +240,239 @@ https://user-images.githubusercontent.com/31878414/103323810-73f16a00-4a12-11eb-
 
 
 **************************************************
+<div>
+<style>
+
+ {
+*box-sizing: border-box;
+}
+
+ html,body {
+height:100%;
+font-size:62.5%;
+}
+
+p {
+font: italic 300 3.4rem 'Source Sans Pro', serif;
+color:#222;
+text-align:center;
+text-transform: uppercase;
+}
+.section-text {text-align:center;padding: 0 25%;
+}
+
+section {
+width: 100%;
+background:#fff;
+padding-top: 70px;
+}
+section button.regular-bt {
+  margin: 20px;
+  border: none;
+  display: block;
+  background: #D33536;
+  color: #fff;
+  text-transform: uppercase;
+  font: 300 1.2rem 'Open Sans', sans-serif;
+  padding: 7px 15px;
+  border-radius: 5px;
+  transition: 0.1s;
+}
+section button:focus {
+  box-shadow: none;
+  outline: none;
+}
+section button:active {
+  box-shadow: 0px 3px 6px 0px #bc1414 inset;
+}
+section button:hover {
+  border-radius: 10px;
+}
+#sorter table {
+  border-radius: 5px; 
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ddd;
+  border-spacing: 0;
+  font: 400 1.4rem 'Open Sans', sans-serif;
+  transition: width 0.2s height 0.2s;
+}
+
+
+#sorter tr:first-child th {
+  font: 400 1.4rem 'Open Sans', sans-serif !important;
+  text-transform: uppercase;
+}
+
+#sorter th, #sorter td {
+
+
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+#sorter th:last-child, #sorter td:last-child {
+  border-right: none;
+}
+#sorter tr:last-child td, #sorter tr:last-child th {
+  border-bottom:none;
+} 
+
+#sorter th {
+  background: #efefef;
+  font: 600 1.4rem 'Open Sans', sans-serif;
+}
+
+#sorter .box {
+  position: relative;
+  margin: 3% auto 0;
+  width: 70%;
+  height: 600px;
+  perspective: 10000;
+  transform-style: preserve-3d;
+
+min-width: 950px;
+  overflow: visible; 
+  transition: width 0.2s height 0.2s;
+}
+
+  width: 70%;
+  height: 600px;
+  perspective: 10000;
+  transform-style: preserve-3d;
+  min-width: 950px;
+  overflow: visible; 
+  transition: width 0.2s height 0.2s;
+}
+
+/* The front and the backside and the little tables */
+#sorter .box .front, #sorter .box .back, #sorter .box .responsive-tables [class*="mirror"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: transform 0.7s; /* How long should the flipping be? */
+  transform-origin: 50% 50%;
+  
+  background: #fff;
+  border-radius: 5px;
+}
+#sorter .box .responsive-tables [class*="mirror"] {
+  width: 48%;
+}
 
 
 
+#sorter .box .responsive-tables {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+#sorter .criteria {
+  display: none;
+}
+
+
+
+/* 3states of the little tables  */
+
+#sorter .box .responsive-tables [class*="mirror"] {
+  transform: rotateY(0deg) translateX(250%);
+  transform-origin: 0 0;
+
+  opacity: 0.0;
+}
+
+#sorter .box [class*="mirror"].active {
+  transform: rotateY(0) translateX(0);
+  transition: transform 0.6s;
+  opacity: 1;
+
+
+#sorter .box [class*="mirror"].activetwo {
+  transform: rotateY(0) translateX(112.7659574%);
+  transition: transform 0.6s;
+  opacity: 1;
+}
+#sorter .box [class*="mirror"].last {
+  transform: rotateY(0) translateX(-110%);
+  transition: transform 0.6s opacity 0.0s 0.4s;
+opacity: 0.0;}
+
+ @media only screen and (max-width : 768px) {
+#pakete .box {
+  width: 90%;
+  min-width: 0px;
+} /* Kindle Fire und kleine Tablets Media Query ende*/
+
+
+
+@media only screen and (max-width : 533px) {
+
+/* Section sorter*/
+
+
+#section .box {
+  position: relative;
+  margin: 3% auto 0;
+  width: 80%;
+  height: 400px;
+  perspective: 10000;
+  transform-style: preserve-3d;
+  min-width: 0px;
+  overflow: hidden; 
+  transition: width 0.2s height 0.2s;
+}
+
+#sorter .box .front, #sorter.box .back, #sorter .box .responsive-tables [class*="mirror"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: transform 0.7s; /* How long should the flipping be? */
+  transform-origin: 50% 50%;  
+  background: #fff;
+  border-radius: 5px;
+}
+
+#sorter .box .responsive-tables {
+  display: block;
+}
+#sorter .criteria {
+  display: none;
+}
+
+
+#sorter .box .responsive-tables [class*="mirror"] {
+  transform: rotateY(0deg) translateX(150%);
+  transform-origin: 0 0;transition: transform 0.6s;opacity 0.0s 0.4s;
+ opacity: 0.0;
+}
+
+#sorter .box [class*="mirror"].active {
+  transform: rotateY(0) translateX(0);
+  transition: transform 0.6s;
+  opacity: 1;
+
+
+#sorter .box [class*="mirror"].activetwo {
+  transform: rotateY(0) translateX(110%);
+  transition: transform 0.6s;
+  opacity: 1;
+}
+#sorter .box [class*="mirror"].last {
+  transform: rotateY(0) translateX(-110%);
+  transition: transform 0.6s opacity 0.0s 0.4s;
+opacity: 0.0;}
+</style>
 
 
 <section id="sorter ">
