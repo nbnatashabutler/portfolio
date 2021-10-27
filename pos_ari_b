@@ -66,7 +66,14 @@ function display_array()
   
 <input class="submit"type="button" id="button2" value="submit" onclick="display_array();"><br>
   
-   
+   <button style="
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;>prep1</button
+
 	<input class="print" type="button" value="print" onclick="printDiv()"><hr></hr>
    <div id="Result">UX Trends<div> 
   
