@@ -111,7 +111,29 @@ margin: 25px;
    <div id="Result">Web Patterns<div> 
 	   
 	   <p><a href=""> <embed src="https://user-images.githubusercontent.com/31878414/103323747-545a4180-4a12-11eb-993b-d8714c4cee55.gif"></a> </p>	   
-<p>Content goes here.</p><br><a href="#profile">top</a><br><p class="date">
+<p>Content goes here.</p>
+</p>
+	   </p><a href="https://www.applyst.me/" target="_blank"class="button" <font color=""> <button style="
+  border: solid 5px;
+  background-color: inherit;
+  padding: 14px 28px;
+  margin: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;">prep3</button></a>
+
+<a href="https://www.applyst.me/" target="_blank"class="button" <font color=""> <button style="
+  border: solid 5px;
+  background-color: inherit;
+  padding: 14px 28px;
+margin: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;">prep4</button></a>
+	
+<p>
+
+<br><a href="#profile">top</a><br><p class="date">
 	   contribution date: 12/30/2020<hr></hr>
 </div>
 
@@ -128,7 +150,29 @@ margin: 25px;
    <div id="Result">SASS<div> 
 	   
 	   <p><a href=""> <embed src="https://user-images.githubusercontent.com/31878414/103323749-545a4180-4a12-11eb-8be9-db17cdcbd81a.gif"></a></p>	   
-<p>Content goes here.</p><br><a href="#profile">top</a><br><p class="date">
+<p>Content goes here.</p>
+</p>
+</p>
+	   </p><a href="https://www.applyst.me/" target="_blank"class="button" <font color=""> <button style="
+  border: solid 5px;
+  background-color: inherit;
+  padding: 14px 28px;
+  margin: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;">prep3</button></a>
+
+<a href="https://www.applyst.me/" target="_blank"class="button" <font color=""> <button style="
+  border: solid 5px;
+  background-color: inherit;
+  padding: 14px 28px;
+margin: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;">prep4</button></a>
+	
+
+<br><a href="#profile">top</a><br><p class="date">
 	   contribution date: 12/30/2020<hr></hr>
 </div>
 
@@ -144,7 +188,30 @@ margin: 25px;
 			<input class="print" type="button" value="print" onclick="printDiv()"><hr></hr>
    <div id="Result">Design Goodies<div> 
 	   <p><a href=""> <embed src="https://user-images.githubusercontent.com/31878414/103323806-72c03d00-4a12-11eb-99af-1db8da34204c.gif"></a> </p>
-<p>Content goes here.</p><br><a href="#profile">top</a><br><p class="date">
+<p>Content goes here.</p>
+
+</p>
+</p>
+	   </p><a href="https://www.applyst.me/" target="_blank"class="button" <font color=""> <button style="
+  border: solid 5px;
+  background-color: inherit;
+  padding: 14px 28px;
+  margin: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;">prep3</button></a>
+
+<a href="https://www.applyst.me/" target="_blank"class="button" <font color=""> <button style="
+  border: solid 5px;
+  background-color: inherit;
+  padding: 14px 28px;
+margin: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;">prep4</button></a>
+	
+
+<br><a href="#profile">top</a><br><p class="date">
 	   contribution date: 12/30/2020<hr></hr>
 </div>
 	   
@@ -160,7 +227,30 @@ margin: 25px;
 	<input class="print" type="button" value="print" onclick="printDiv()"><hr></hr>
    <div id="Result">Workflow Management<div> 
 	   <p><a href=""> <embed src="https://user-images.githubusercontent.com/31878414/103323807-7358d380-4a12-11eb-826a-e9e8767ad304.gif"></a></p>
-<p>Content goes here.</p><br><a href="#profile">top</a><br><p class="date">
+<p>Content goes here.</p>
+
+</p>
+</p>
+	   </p><a href="https://www.applyst.me/" target="_blank"class="button" <font color=""> <button style="
+  border: solid 5px;
+  background-color: inherit;
+  padding: 14px 28px;
+  margin: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;">prep3</button></a>
+
+<a href="https://www.applyst.me/" target="_blank"class="button" <font color=""> <button style="
+  border: solid 5px;
+  background-color: inherit;
+  padding: 14px 28px;
+margin: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;">prep4</button></a>
+	
+
+<br><a href="#profile">top</a><br><p class="date">
 	   contribution date: 12/30/2020 <hr></hr>
 	   </div>
 	   
@@ -177,7 +267,30 @@ margin: 25px;
 	<input class="print" type="button" value="print" onclick="printDiv()"><hr></hr>
    <div id="Result">ECMA<div> 
 	   <p><a href=""> <embed src="https://user-images.githubusercontent.com/31878414/103323808-7358d380-4a12-11eb-9343-78b7e3822092.gif"></a> </p>
-<p>Content goes here.</p><br><a href="#profile">top</a><br><p class="date">
+<p>Content goes here.</p>
+
+</p>
+</p>
+	   </p><a href="https://www.applyst.me/" target="_blank"class="button" <font color=""> <button style="
+  border: solid 5px;
+  background-color: inherit;
+  padding: 14px 28px;
+  margin: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;">prep3</button></a>
+
+<a href="https://www.applyst.me/" target="_blank"class="button" <font color=""> <button style="
+  border: solid 5px;
+  background-color: inherit;
+  padding: 14px 28px;
+margin: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;">prep4</button></a>
+	
+
+<br><a href="#profile">top</a><br><p class="date">
 	   contribution date: 12/30/2020 <hr></hr>
 	   </div>
 	   	   	   
@@ -193,7 +306,29 @@ margin: 25px;
    <div id="Result">UI Creatives<div> 
 	   <p><a href=""> <embed src="
 https://user-images.githubusercontent.com/31878414/103323810-73f16a00-4a12-11eb-93f5-df81de32e796.gif"></a> </p>
-<p>Content goes here.</p><br><a href="#profile">top</a><br><p class="date">
+<p>Content goes here.</p>
+</p>
+</p>
+	   </p><a href="https://www.applyst.me/" target="_blank"class="button" <font color=""> <button style="
+  border: solid 5px;
+  background-color: inherit;
+  padding: 14px 28px;
+  margin: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;">prep3</button></a>
+
+<a href="https://www.applyst.me/" target="_blank"class="button" <font color=""> <button style="
+  border: solid 5px;
+  background-color: inherit;
+  padding: 14px 28px;
+margin: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;">prep4</button></a>
+	
+
+<br><a href="#profile">top</a><br><p class="date">
 	   contribution date: 12/30/2020 <hr></hr>
 	   </div>
 	   
@@ -211,7 +346,30 @@ https://user-images.githubusercontent.com/31878414/103323810-73f16a00-4a12-11eb-
 <input class="print" type="button" value="print" onclick="printDiv()"><hr></hr>
    <div id="Result">Career and Credentials<div> 
    <p><a href=""> <embed src="https://user-images.githubusercontent.com/31878414/103323809-73f16a00-4a12-11eb-8c89-0c0b0480fca3.gif"></a> </p>
-<p>Content goes here.</p><br><a href="#profile">top</a><br><p class="date">
+<p>Content goes here.</p>
+
+</p>
+</p>
+	   </p><a href="https://www.applyst.me/" target="_blank"class="button" <font color=""> <button style="
+  border: solid 5px;
+  background-color: inherit;
+  padding: 14px 28px;
+  margin: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;">prep3</button></a>
+
+<a href="https://www.applyst.me/" target="_blank"class="button" <font color=""> <button style="
+  border: solid 5px;
+  background-color: inherit;
+  padding: 14px 28px;
+margin: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;">prep4</button></a>
+	
+
+<br><a href="#profile">top</a><br><p class="date">
 	   contribution date: 12/30/2020 <hr></hr>
 </p>
 	   </div>
