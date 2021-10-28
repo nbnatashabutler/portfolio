@@ -66,13 +66,21 @@ function display_array()
   
 <input class="submit"type="button" id="button2" value="submit" onclick="display_array();"><br>
   
-  <a href=""class="button" style="
-  border: none;
+  <a href="https://www.applyst.me/" target="_blank"class="button" style="
+  border: solid 5px;
   background-color: inherit;
   padding: 14px 28px;
   font-size: 16px;
   cursor: pointer;
   display: inline-block;">prep1</button
+
+ <a href="https://www.applyst.me/" target="_blank"class="button" style="
+  border: solid 5px;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;">prep2</button
 
 	<input class="print" type="button" value="print" onclick="printDiv()"><hr></hr>
    <div id="Result">UX Trends<div> 
@@ -84,6 +92,21 @@ function display_array()
 <p>Content goes here.</p><br><a href="#profile">top</a><br><p class="date">
 	   contribution date: 12/30/2020<hr></hr>
 
+<a href="https://www.applyst.me/" target="_blank"class="button" style="
+  border: solid 5px;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;">prep3</button>
+
+<a href="https://www.applyst.me/" target="_blank"class="button" style="
+  border: solid 5px;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;">prep4</button
 
 </div>
 
