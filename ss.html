@@ -172,10 +172,46 @@ line-height: 1.25;
 }
 
 
+#promo-notifications ul{
+	background-color: #ffffcc;
+        width: 100%;
+	height: 35px;
+	position: relative;
+	overflow: hidden;
+}
+
+#promo-notifications li{
+	width: 980px;
+	line-height: 35px;
+        height: 35px;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	text-align: center;
+	list-style: none;
+}
+
+
 </style>
 
 <head></head>
 <body>
+<script>jQuery(document).ready(function($) {
+  var promoticker = function() {
+    var window_width = window.innerWidth;
+    var speed = 24 * window_width;
+    $('#promo-notifications li:first').animate( {left: '-980px'}, speed, 'linear', function() {
+      $(this).detach().appendTo('#promo-notifications ul').css('left', "100%");
+      promoticker();
+    });
+  };</script>
+
+<div id="promo-notifications">
+	<ul>  
+    <li>Success is the sum of small efforts repeated day in and day out. [R. Collier]</li>
+    <a href=""><li> Click here for your daily certificate!</li></a>
+  </ul>
+</div>
 
 <div class="callout">
   <p> Four Teams. Four Parts. "How To Solve Equations." Grades 6 - 9.<br>
