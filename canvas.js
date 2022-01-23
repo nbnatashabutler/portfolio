@@ -64,3 +64,25 @@ console.log(atob(data.split(',')[1]));
 window.open(data);});
 
 
+document.getElementById('clear').addEventListener('click', function ()
+{
+signaturePad.clear();
+});
+
+document.getElementById('draw').addEventListener('click', function ()
+
+{
+var ctx = canvas.getContext ('2d');
+
+console.log(ctx.globalCompositeOperation);
+ctx.globalCompositeOperation = 'source-over';
+});
+
+document.getElementById('erase').addEventListener('click', function ()
+
+{
+var ctx = canvas.getContext ('2d');
+ctx.globalCompositeOperation = 'destination-out';
+});
+
+
