@@ -2,15 +2,6 @@
 <html>
 <style>
 
-wrapper {
-  position: relative;
-  width: 400px;
-  height: 200px;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
 
 .signature-pad {
   border: solid 2px;
@@ -39,36 +30,6 @@ var signaturePad = new SignaturePad(canvas, {
   backgroundColor: 'rgb(255, 255, 255)' 
 });
 
-document.getElementById('save-png').addEventListener('click', function () {
-  if (signaturePad.isEmpty()) {
-    return alert("Please provide a signature first.");
-  }
-  
-  var data = signaturePad.toDataURL('image/png');
-  console.log(data);
-  window.open(data);
-});
-
-document.getElementById('save-jpeg').addEventListener('click', function () {
-  if (signaturePad.isEmpty()) {
-    return alert("Please provide a signature first.");
-  }
-
-  var data = signaturePad.toDataURL('image/jpeg');
-  console.log(data);
-  window.open(data);
-});
-
-document.getElementById('save-svg').addEventListener('click', function () {
-  if (signaturePad.isEmpty()) {
-    return alert("Please provide a signature first.");
-  }
-
-  var data = signaturePad.toDataURL('image/svg+xml');
-  console.log(data);
-  console.log(atob(data.split(',')[1]));
-  window.open(data);
-});
 
 document.getElementById('clear').addEventListener('click', function () {
   signaturePad.clear();
@@ -81,10 +42,7 @@ document.getElementById('draw').addEventListener('click', function () {
 
 });
 
-document.getElementById('erase').addEventListener('click', function () {
-  var ctx = canvas.getContext('2d');
-  ctx.globalCompositeOperation = 'destination-out';
-});</script>
+document.getElementById('erase').addEventListener('click;</script>
 
 <body>
 <div class="wrapper">
