@@ -14,6 +14,7 @@
 }
 
 .signature-pad {
+  border: 2px; 
   position: absolute;
   left: 0;
   top: 0;
@@ -113,7 +114,7 @@ var ctx = canvas.getContext ('2d');
 ctx.globalCompositeOperation = 'destination-out';
 });
 </script>
-<body>
+<body onload = "draw ();">
 <div class="wrapper">
 
   <canvas id="signature-pad" class="signature-pad" width="400" height="300"><img src = "https://user-images.githubusercontent.com/31878414/101600776-c9b19400-39c9-11eb-92a4-f7eff96ab163.jpg"></canvas>
