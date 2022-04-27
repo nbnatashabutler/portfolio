@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="">
 
 <style>
-body:
+body {
 font-family: sans-serif;
 height: 100vh;
 display:grid;
@@ -13,16 +13,10 @@ justify-content:center;
 align-items:center;
 font-size:1.2rem;
 background-color: #060023;
+}
 
-font-family: "Convergence", sans-serif,
-height: 100vh;
-display:grid;
-justify-content:center;
-align-items:center;
-font-size:1.2rem;
-background-color: 060023;
 
-&_ _input:
+&_ _input {
 
 position:absolute;
 top:0;
@@ -37,21 +31,28 @@ color: white;
 outline: none;
 padding: 1.25 rem;
 background: none;
+}
 
-&:hover
+&:hover{
 border-color: #18ffff;
+}
 
 
 
 
 
+.form_ _input:
+{
+focus~.form_ _label;}
+.form_ _input: {
+not(:placeholder-shown);}
 
-.form_ _input: focus~.form_ _label;
-.form_ _input: not(:placeholder-shown);
-.form_ _input: not(:focus)~form_ _label;
+.form_ _input:{
+ not(:focus)~form_ _label;
+
 top: -0.5rem;
 font-size: 0.8 rem;
-left:0.8 rem;
+left:0.8 rem;}
 
 &_ _ label{
 position: albsolute;
@@ -64,19 +65,8 @@ transition: top 200ms ease-in, left 200ms ease-in, font-size 200 ms ease-in;
 background-color: #060023;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-</head>
 </style>
+</head>
 
 <html>
 <body>
