@@ -34,19 +34,11 @@ background: none;
 &:hover{
 border-color: #18ffff;
 }
-
-
-
-
-
-.form_ _input:
 {
-focus~.form_ _label;}
-.form_ _input: {
-not(:placeholder-shown);}
-
-.form_ _input:{
- not(:focus)~form_ _label;
+.form_ _input:focus~.form_ _label,
+.form_ _input:not(:placeholder-shown),
+.form_ _input:
+ not(:focus)~form_ _label;}
 
 top: -0.5rem;
 font-size: 0.8 rem;
