@@ -142,7 +142,43 @@ h2 {
   
 }
 
+.flip-boxtwo {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  
+}
+
+.flip-boxthree {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  
+}
+
 .flip-box-innerone{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box-innertwo{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box-innerthree{
   position: relative;
   width: 100%;
   height: 100%;
@@ -155,6 +191,14 @@ h2 {
   transform: rotateY(180deg);
 }
 
+.flip-boxtwo:hover .flip-box-innertwo {
+  transform: rotateY(180deg);
+}
+
+.flip-boxthree:hover .flip-box-innerthree {
+  transform: rotateY(180deg);
+}
+
 .flip-box-frontone, .flip-box-backone {
   position: absolute;
   width: 100%;
@@ -162,7 +206,36 @@ h2 {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+
+.flip-box-fronttwo, .flip-box-backtwo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-frontthree, .flip-box-backthree {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
 .flip-box-frontone {
+  background-color: #bbb;
+  color: black;
+  align-self: center;
+}
+
+.flip-box-fronttwo {
+  background-color: #bbb;
+  color: black;
+  align-self: center;
+}
+
+.flip-box-frontthree {
   background-color: #bbb;
   color: black;
   align-self: center;
@@ -173,6 +246,19 @@ h2 {
   color: white;
   transform: rotateY(180deg);
 }
+
+.flip-box-backtwo {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-box-backthree {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+
 
   
 </style>
