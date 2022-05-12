@@ -7,7 +7,31 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.flip-box {
+.flip-boxone {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  
+}
+.flip-boxtwo{
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  
+}
+.flip-boxthree {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  
+}
+.flip-boxfour{
   background-color: transparent;
   width: 300px;
   height: 200px;
@@ -16,7 +40,64 @@ body {
   
 }
 
-.flip-box-inner {
+.flip-boxfive {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  
+}
+.flip-boxsix{
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  
+}
+
+.flip-box-innerone{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-box-innertwo{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-box-innerthree {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-box-innerfour {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-box-innerfive {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-box-innersix{
   position: relative;
   width: 100%;
   height: 100%;
@@ -25,11 +106,62 @@ body {
   transform-style: preserve-3d;
 }
 
-.flip-box:hover .flip-box-inner {
+
+.flip-boxone:hover .flip-box-innerone {
+  transform: rotateY(180deg);
+}
+.flip-boxtwo:hover .flip-box-innertwo {
+  transform: rotateY(180deg);
+}
+.flip-boxthree:hover .flip-box-innerthree {
+  transform: rotateY(180deg);
+}
+.flip-boxfour:hover .flip-box-innerfour {
+  transform: rotateY(180deg);
+}
+.flip-boxfive:hover .flip-box-innerfive{
+  transform: rotateY(180deg);
+}
+.flip-boxsix:hover .flip-box-innersix {
   transform: rotateY(180deg);
 }
 
-.flip-box-front, .flip-box-back {
+.flip-box-frontone, .flip-box-backone {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-box-fronttwo, .flip-box-backtwo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-box-frontthree, .flip-box-backthree{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-box-frontfour, .flip-box-backfour {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-box-frontfive, .flip-box-backfive{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-box-frontsix, .flip-box-backsix{
   position: absolute;
   width: 100%;
   height: 100%;
@@ -37,17 +169,71 @@ body {
   backface-visibility: hidden;
 }
 
-.flip-box-front {
+.flip-box-frontone {
+  background-color: #bbb;
+  color: black;
+  align-self: center;
+}
+.flip-box-fronttwo {
+  background-color: #bbb;
+  color: black;
+  align-self: center;
+}
+.flip-box-frontthree {
+  background-color: #bbb;
+  color: black;
+  align-self: center;
+}
+.flip-box-frontfour {
+  background-color: #bbb;
+  color: black;
+  align-self: center;
+}
+.flip-box-frontfive {
+  background-color: #bbb;
+  color: black;
+  align-self: center;
+}
+.flip-box-frontsix {
   background-color: #bbb;
   color: black;
   align-self: center;
 }
 
-.flip-box-back {
+
+
+
+.flip-box-backone {
   background-color: #555;
   color: white;
   transform: rotateY(180deg);
 }
+.flip-box-backtwo {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+.flip-box-backthree{
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+.flip-box-backfour {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+.flip-box-backfive {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+.flip-box-backsix {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+
 
 h3
 { 
@@ -61,25 +247,25 @@ h3
 <h1></h1>
 <h3>The Covid 19 Mock-Interview</h3>
 
-<div class="flip-box">
+<div class="flip-boxone">
 
-  <div class="flip-box-inner">
-    <div class="flip-box-front">
+  <div class="flip-box-innerone">
+    <div class="flip-box-frontone">
       <img src="https://user-images.githubusercontent.com/31878414/103507144-81508f00-4e2c-11eb-9b85-ea8e1875d0d9.jpeg" alt="Paris" style="width:140px;height:140px">
     </div>
-    <div class="flip-box-back">
+    <div class="flip-box-backone">
       <h2>Paris</h2>
       <p>This sure makes traveling a lot easier.</p>
     </div>
   </div>
   <h3 class="heading">Detangling 11 Years Of Web Dev Experience</h3>
   
-  <div class="flip-box">
-  <div class="flip-box-inner">
-    <div class="flip-box-front">
+  <div class="flip-boxtwo">
+  <div class="flip-box-innertwo">
+    <div class="flip-box-fronttwo">
       <img src="https://user-images.githubusercontent.com/31878414/103500776-15fdc180-4e1a-11eb-94ed-fab78d758f38.gif" alt="Paris" style="width:140px;height:140px">
     </div>
-    <div class="flip-box-back">
+    <div class="flip-box-backtwo">
       <h2>Mock-Interview</h2>
       <p>Sorting out a whole host of skills, principles, and methods that may or may not be considered best practice takes some patience for someone who has been privileged with flexibility to freely explore all things pertaining to web development.</p>
     </div>
@@ -87,12 +273,12 @@ h3
   
   <h3 class="heading">Humanizing Design - Oh No!</h3>
   
-  <div class="flip-box">
-  <div class="flip-box-inner">
-    <div class="flip-box-front">
+  <div class="flip-boxthree">
+  <div class="flip-box-innerthree">
+    <div class="flip-box-frontthree">
       <img src="https://user-images.githubusercontent.com/31878414/103500775-15fdc180-4e1a-11eb-9c9b-26d068855d81.gif" alt="Paris" style="width:140px;height:140px">
     </div>
-    <div class="flip-box-back">
+    <div class="flip-box-backthree">
       <h2>Humanizing Design</h2>
       <p>Designing with a human touch. That sounds pleasant. I found a <a=href"">site</a> that hit the ball out the park, in my humble opinion.</p>
     </div>
@@ -100,12 +286,12 @@ h3
   
   <h3 class="heading">Out Of The "Rabbit Hole". Now What?</h3>
   
-  <div class="flip-box">
-  <div class="flip-box-inner">
-    <div class="flip-box-front">
+  <div class="flip-boxfour">
+  <div class="flip-box-innerfour">
+    <div class="flip-box-frontfour">
       <img src="https://user-images.githubusercontent.com/31878414/103500773-15fdc180-4e1a-11eb-9e65-c57923aead9e.gif" alt="Paris" style="width:140px;height:140px">
     </div>
-    <div class="flip-box-back">
+    <div class="flip-box-backfour">
       <h2>Out Of The Rabbit Hole</h2>
       <p>My hands are filled with tools and techniques but my portfolio is a little bare. I'm building a command central self-imposed bootcamp to stay fit for the chance build something meaningful. </p>
     </div>
@@ -113,12 +299,12 @@ h3
   
   <h3 class="heading">My Hands Are Filled With Tools and Techniques. </h3>
   
-  <div class="flip-box">
-  <div class="flip-box-inner">
-    <div class="flip-box-front">
+  <div class="flip-boxfive">
+  <div class="flip-box-innerfive">
+    <div class="flip-box-frontfive">
       <img src="https://user-images.githubusercontent.com/31878414/103500771-15652b00-4e1a-11eb-8dc3-7b2462e06556.gif" alt="Paris" style="width:140px;height:140px">
     </div>
-    <div class="flip-box-back">
+    <div class="flip-box-backfive">
       <h2>Tools and Techniques</h2>
       <p><a href="">Portfolio</a> <a href="">Command Central</a> Take a peek.</p>
     </div>
@@ -126,12 +312,12 @@ h3
   
   <h3 class="heading">My Resume Is Watching Recruiters Walk By. Why Oh Why?</h3>
   
-  <div class="flip-box">
-  <div class="flip-box-inner">
-    <div class="flip-box-front">
+  <div class="flip-boxsix">
+  <div class="flip-box-innersix">
+    <div class="flip-box-frontsix">
       <img src="https://user-images.githubusercontent.com/31878414/103500767-14cc9480-4e1a-11eb-8326-82e67c33033f.gif" alt="Paris" style="width:140px;height:140px">
     </div>
-    <div class="flip-box-back">
+    <div class="flip-box-backsix">
       <h2>Resume</h2>
       <p>I built an app component for resume critiques. Test it. If it doesn't work email me the forms. I'm on <a href="">LinkedIn</a>. Here's my latest <a href="">CSS Grid</a>. <a href="">React</a> and <a href="">Py</a> are trending here's some grab and go code.</p>
     </div>
