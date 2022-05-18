@@ -1,15 +1,7 @@
 <!Doctype html>
-<html>
-<head>
 <meta charset="utf-8">
-<script src="//d3js.org/d3.v4.min.js"></script>
-</head>
-
-<body>
 <canvas width="960" height="500"></canvas>
-
-
-
+<script src="//d3js.org/d3.v4.min.js"></script>
 
 <script>
 
@@ -32,7 +24,8 @@ var color = d3.scaleOrdinal()
 
 render();
 
-Canvas.call(d3.drag()
+C
+canvas.call(d3.drag()
 .subject(dragsubject)
 .on("start", dragstarted)
 .on("drag", dragged)
@@ -83,8 +76,8 @@ function dragend() {
 d3.event.subject.active = false;
 }
 </script>
-</body>
-</html>
+
+
 
 
 
