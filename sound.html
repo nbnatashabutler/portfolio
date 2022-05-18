@@ -47,48 +47,7 @@ canvas.call(d3.drag()
 .on("end", dragended)
 .on("start.render drag.render end.render", render));
 
-function render() {
-context.clearRect(0,0,width,height);
-for (var i = 0, n = circles.length, circle; i < n; ++i){
-circle = circles[i];
-context.beginPath();
-context.moveTo(circle.x + radius, circle.y);
-context.arc(circle.x, circle.y, radius, 0, 2 * Math.PI);
-context.fillstyle = color(circle.index);
-context.fill();
-if (circle.active) {
-context.lineWidth = 2;
-context stroke();
-}
-}
-}
-function dragsubject() {
-  var i = 0,
-n = circles.length, dx, dy, d2, s2 = radius * radius * 4, circle, subject;
 
-for (i = 0; i < n; ++i) {
-circle = circles[i];
-dx = d3.event.x - circle.x;
-dy = d3.event.y - circle.y;
-d2 = dx * dx + dy * dy;
-if (d2 < s2) subject = circle, s2 = d2;
-}
-
-return subject;
-}
-function dragstarted() {
-circles.splice(circles.indexOf(d3.event.subject), 1);
-circles.push(d3.event.subject);
-d3.event.subject.active = true;
-}
-
-
-function dragged() {
-d3.event.subject.x = d3.event.x;
-d3.event.subject.y = d3.event.y;
-}
-function dragend() {
-d3.event.subject.active = false;
 }
 </script>
 
