@@ -3,22 +3,20 @@
 <title></title>
 <meta charset="utf-8">
 
-<script type="module">
 
-import {drag} from "https://cdn.skypack.dev/d3-drag@3";
-
-const handler = drag();
-
-
-
-</script>
 </head>
 <html>
 <body>
 
 <canvas width="960" height="500"></canvas>
 </body>
-<script>
+
+<script type="module">
+
+import {drag} from "https://cdn.skypack.dev/d3-drag@3";
+
+const handler = drag();
+
 
  var canvas = d3.select("canvas"), context = canvas.node().getContext("2d"),
 width = canvas.property("width"),
