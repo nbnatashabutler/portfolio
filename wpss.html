@@ -1,0 +1,502 @@
+
+<html>
+<head>
+
+<script src="grid.js">
+
+</script>
+</head>
+<style>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Manuale&family=Red+Rose:wght@300;500&display=swap" rel="stylesheet">
+  * {
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: #f1f1f1;
+  background-repeat: repeat;
+  padding: 20px;
+  font-family: Arial;
+  background-image: url("https://user-images.githubusercontent.com/31878414/103474512-a08ae600-4d72-11eb-9a09-237bcf0be8f4.png");
+}
+
+.logo{
+  font: 36px;
+  
+}
+
+.paper{
+ 
+  background: white;
+  background-repeat: no-repeat;
+  background-size: 300px 300px;
+  border: 3px inset;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+  color: #97FD97
+}
+
+h2 {
+  color: white;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: #D16BA5;
+  padding: 10px;
+ 
+}
+ 
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: white;
+  color: black;
+}
+
+.vertical{
+ writing-mode: vertical-rl;
+ visibility: hidden;
+}
+
+
+#top, #left {
+	background-image:linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+	position: fixed;
+	}
+  
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 7px;
+		}
+		#left { 
+    left: 0;
+    writing-mode: vertical-rl;
+    }
+		#right { right: 0; }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 7px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+.flip-boxone {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  
+}
+
+.flip-boxtwo {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  
+}
+
+.flip-boxthree {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  
+}
+
+.flip-box-innerone{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;}
+ul{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  margin:0;
+  padding:0;
+  display:flex;
+  
+}
+ul li{
+  list-style:none;
+  width:40px;
+  height:40px;
+  background:#fff;
+  border-radius:50%;
+  animation:grow 1.6s ease-in-out infinite;
+}
+  @keyframes grow
+  {
+    0% , 40% , 100%
+    {
+      transform:scale(0.2);
+    }
+    20%{
+       transform:scale(1);
+
+    }
+  }
+
+ul li:nth-child(1){
+  animation-delay:-1.4s;
+  back}
+  }
+
+ul li:nth-child(1){
+  animation-delay:-1.4s;
+  background:#ffff00;
+  box-shadow:0 0 50px #76ff03;
+  
+
+}
+
+.flip-box-innertwo{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box-innerthree{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-boxone:hover .flip-box-innerone {
+  transform: rotateY(180deg);
+}
+
+.flip-boxtwo:hover .flip-box-innertwo {
+  transform: rotateY(180deg);
+}
+
+.flip-boxthree:hover .flip-box-innerthree {
+  transform: rotateY(180deg);
+}
+
+.flip-box-frontone, .flip-box-backone {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-fronttwo, .flip-box-backtwo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-frontthree, .flip-box-backthree {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-frontone {
+  background-color: #bbb;
+  color: black;
+  align-self: center;
+}
+
+.flip-box-fronttwo {
+  background-color: #bbb;
+  color: black;
+  align-self: center;
+}
+
+.flip-box-frontthree {
+  background-color: #bbb;
+  color: black;
+  align-self: center;
+}
+
+.flip-box-backone {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-box-backtwo {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-box-backthree {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+  
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1 class="logo"
+>Algebra 1 Team 2 - Simplify</h1>
+<hr>
+
+<h2>Areas Of Focus</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('soft skills')">soft skills</button>
+  <button class="btn" onclick="filterSelection('methods')">factoring methods</button>
+  <button class="btn" onclick="filterSelection('xy')">x,y intercepts</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+
+<div class="row">
+  <div class="column soft skills">
+    <div class="content">
+<div class="flip-boxone">
+<div class="flip-box-innerone">
+    <div class="flip-box-frontone">
+      <h4>What soft skills is used most by managers?<br><br><br><ul><li></li><li><br>TAP</li><li></li></ul> <br><br>1. <a href="https://youtube.com/playlist?list=PLsWA40CLsHpywWGSPiYX49pnmHpKqFgKk">GCF</a>  &nbsp; 2.<a href="https://youtube.com/playlist?list=PLsWA40CLsHpywWGSPiYX49pnmHpKqFgKk" >Product Sum</a> </h4>
+      </div>
+    <div class="flip-box-backone">
+<h2>See poll results. </h2><br><br><ul><li></li><li></li><li></li></ul>
+      <p><a href="http://poll-maker.com/Q5A41DZEG">Show Me</a></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+  <div class="column soft skills">
+    <div class="content">
+<div class="flip-boxtwo">
+<div class="flip-box-innertwo">
+    <div class="flip-box-fronttwo">
+      <h4>What soft skills is most used by supervisors?<br><br><br><br><ul><li></li><li><br>TAP</li><li></li></ul> <br><br>1. <a href="https://youtube.com/playlist?list=PLsWA40CLsHpywWGSPiYX49pnmHpKqFgKk">Expand</a>  &nbsp; 2.<a href="https://youtube.com/playlist?list=PLsWA40CLsHpywWGSPiYX49pnmHpKqFgKk">FOIL</a> <br>3.  <a href="https://youtube.com/playlist?list=PLsWA40CLsHpywWGSPiYX49pnmHpKqFgKk" >Distribute</a> &nbsp; 4. <a href="https://youtube.com/playlist?list=PLsWA40CLsHpywWGSPiYX49pnmHpKqFgKk">CLT</a> </h4>
+      </div>
+<div class="flip-box-backtwo">
+<h2>See poll results.</h2><br><br><ul><li></li><li></li><li></li></ul>
+      <p><a href="http://poll-maker.com/Q5A41DZEG" >Show Me</a></p>
+   
+    </div>
+  </div>
+</div>
+  </div>
+  </div>
+
+
+
+  <div class="column soft skills">
+    <div class="content">
+<div class="flip-boxthree">
+<div class="flip-box-innerthree">
+    <div class="flip-box-frontthree">
+      <h4>What soft skills is used most by all?<br><br><br><br> <br><br><ul><li></li><li><br>TAP</li><li></li></ul>  1. <a href="https://youtube.com/playlist?list=PLsWA40CLsHpywWGSPiYX49pnmHpKqFgKk">FOIL</a>  &nbsp; 2.<a href="https://youtube.com/playlist?list=PLsWA40CLsHpywWGSPiYX49pnmHpKqFgKk" >CLT</a> </h4>
+      </div>
+    <div class="flip-box-backthree">
+<h2>See poll results.</h2><br><br><ul><li></li><li></li><li></li></ul>
+      <p><a href= "http://poll-maker.com/Q5A41DZEG" >Show Me</a></p>
+     
+    </div>
+  </div>
+    </div>
+  </div>
+    </div>
+  
+  
+  <div class="column methods">
+    <div class="content">
+    
+    <h4>More about <a href="https://youtu.be/EDebmfT5Nsk">Firing</a></h4>
+      <p></p>
+    </div>
+  
+  </div>
+
+<div class="column methods">
+    <div class="content">
+    
+    <h4>More about <a href="https://youtu.be/S2sHFA6_IFw" >Corrective Action</a></h4>
+      <p></p>
+    </div>
+
+
+  </div>
+
+<div class="column methods">
+    <div class="content">
+    
+    <h4>More about <a href="https://youtu.be/_lDEuLjA82g">Rewarding Employees</a></h4>
+      <p></p>
+    </div>
+  </div>
+
+<div class="column methods">
+    <div class="content">
+    
+    <h4>More about <a href="https://youtu.be/sYUhFhSrhJ8" >Teamwork</a></h4>
+      <p></p>
+    </div>
+</div>
+
+<div class="column methods">
+    <div class="content">
+    
+    <h4>More about <a href="https://youtu.be/BxyIYVBGn20" >Training</a></h4>
+      <p></p>
+    </div>
+</div>
+
+<div class="column methods">
+    <div class="content">
+    
+    <h4>More about <a href="https://youtu.be/-Z6ANpa10lQ">soft skills</a></h4>
+      <p>soft skills</p>
+    </div>
+</div>
+
+
+  <div class="column xy">
+    <div class="content">
+     
+      <h4>More about <a href="https://youtu.be/ckBBBJbzKqw">soft skills</a></h4>
+      <p>soft skills</p>
+    </div>
+  </div>
+  
+  <div class="column xy">
+    <div class="content">
+    
+    
+      <h4>More about <a href=" https://youtu.be/S61d8OAzHkA ">soft skills</a></h4>
+      <p>soft skills</p>
+    </div>
+  </div>
+
+<div class="column xy">
+    <div class="content">
+    
+    
+      <h4>More about <a href="https://youtu.be/fUWtHTnVoCQ" >soft skills</a></h4>
+      <p>soft skills</p>
+    </div>
+  </div>
+
+<div class="column xy">
+    <div class="content">
+    
+    
+      <h4>More about <a href="https://youtu.be/UWO1iTtFDTw">soft skills</a></h4>
+      <p>soft skills</p>
+    </div>
+  </div>
+
+<div class="column xy">
+    <div class="content">
+   
+      <h4>More about <a href="https://youtu.be/baWMXIqM7u8" >soft skills</a></h4>
+      <p>Soft Skills </p>
+    </div>
+  </div>
+
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+
+
+
+
+<div id="left"></div>
+<div id="right"></div>
+<div id="top">
+
+<i data-feather="">
+  
+</i>
+
+</div>
+<div id="bottom"></div>
+
+<div class="vl"></div>
+
+
+
+</body>
+</html>
